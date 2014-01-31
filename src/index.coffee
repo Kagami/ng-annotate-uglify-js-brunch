@@ -1,5 +1,6 @@
 sysPath = require 'path'
 uglify = require 'uglify-js'
+ngAnnotate = require 'ng-annotate'
 
 clone = (obj) ->
   return obj if not obj? or typeof obj isnt 'object'
@@ -7,7 +8,7 @@ clone = (obj) ->
   copied[key] = clone val for key, val of obj
   copied
 
-module.exports = class UglifyMinifier
+module.exports = class NgAnnotateUglifyMinifier
   brunchPlugin: yes
   type: 'javascript'
 
@@ -24,9 +25,10 @@ module.exports = class UglifyMinifier
       undefined
 
     try
-      optimized = uglify.minify(data, options)
+      annotated = ngAnnotate(data, {add: true}).src
+      optimized = uglify.minify(annotated, options)
     catch err
-      error = "JS minify failed on #{path}: #{err}"
+      error = "ng-annotate or JS minify failed on #{path}: #{err}"
     finally
       result = if optimized and options.sourceMaps
         data: optimized.code
