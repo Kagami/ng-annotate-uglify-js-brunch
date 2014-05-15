@@ -21,5 +21,15 @@
   "devDependencies": {
     "mocha": "1.11.0",
     "chai": "1.7.0"
-  }
+  },
+  "keywords": [
+    "brunchplugin",
+    "uglify",
+    "uglify-js",
+    "optimizer",
+    "angular",
+    "angularjs",
+    "annotate",
+    "ng-annotate"
+  ]
 }
