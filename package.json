@@ -1,6 +1,6 @@
 {
   "name": "ng-annotate-uglify-js-brunch",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Adds ng-annotate AND Uglify minifying support to brunch.",
   "author": "Paul Miller (http://paulmillr.com/)",
   "license": "MIT",
