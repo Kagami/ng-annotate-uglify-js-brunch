@@ -1,12 +1,13 @@
 {
   "name": "ng-annotate-uglify-js-brunch",
   "version": "1.7.2",
-  "description": "Adds Uglify minifying support to brunch.",
+  "description": "Adds ng-annotate AND Uglify minifying support to brunch.",
   "author": "Paul Miller (http://paulmillr.com/)",
-  "homepage": "https://github.com/brunch/uglify-js-brunch",
+  "license": "MIT",
+  "homepage": "https://github.com/Kagami/ng-annotate-uglify-js-brunch",
   "repository": {
     "type": "git",
-    "url": "git@github.com:brunch/uglify-js-brunch.git"
+    "url": "https://github.com/Kagami/ng-annotate-uglify-js-brunch.git"
   },
   "main": "./lib/index",
   "scripts": {

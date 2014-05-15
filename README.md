@@ -1,18 +1,20 @@
-## uglify-js-brunch
-Adds [UglifyJS](https://github.com/mishoo/UglifyJS) support to
+## ng-annotate-uglify-js-brunch
+Adds [ng-annotate](https://github.com/olov/ng-annotate) AND
+[UglifyJS](https://github.com/mishoo/UglifyJS) support to
 [brunch](http://brunch.io).
 
-The plugin will minify your javascript files.
+The plugin will annotate and minify your javascript files.
 
 ## Usage
 Install the plugin via npm with `npm install --save uglify-js-brunch`.
 
 Or, do manual install:
 
-* Add `"uglify-js-brunch": "x.y.z"` to `package.json` of your brunch app.
-  Pick a plugin version that corresponds to your minor (y) brunch version.
+* Add `"ng-annotate-uglify-js-brunch": "x.y.z"` to `package.json` of
+  your brunch app. Pick a plugin version that corresponds to your minor
+  (y) brunch version.
 * If you want to use git version of plugin, add
-`"uglify-js-brunch": "git+ssh://git@github.com:brunch/uglify-js-brunch.git"`.
+`"ng-annotate-uglify-js-brunch": "git+https://github.com/Kagami/ng-annotate-uglify-js-brunch.git"`.
 
 To specify uglifyjs options, use `config.plugins.uglify` object, for example:
 ```coffeescript
@@ -21,7 +23,7 @@ config =
     uglify:
       mangle: false
       compress:
-        global_defs: 
+        global_defs:
           DEBUG: false
 ```
 
