@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "uglify-js": "~2.3.6",
-    "ng-annotate": "~0.4.0"
+    "ng-annotate": "^0.9.1"
   },
   "devDependencies": {
     "mocha": "1.11.0",

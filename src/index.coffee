@@ -25,8 +25,10 @@ module.exports = class NgAnnotateUglifyMinifier
       undefined
 
     try
-      annotated = ngAnnotate(data, {add: true}).src
-      optimized = uglify.minify(annotated, options)
+      annotated = ngAnnotate(data, {add: true})
+      if annotated.errors
+        throw new Error annotated.errors.join("\n")
+      optimized = uglify.minify(annotated.src, options)
     catch err
       error = "ng-annotate or JS minify failed on #{path}: #{err}"
     finally
