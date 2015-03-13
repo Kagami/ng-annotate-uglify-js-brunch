@@ -15,8 +15,8 @@
     "test": "node_modules/.bin/mocha --require test/common.js"
   },
   "dependencies": {
-    "uglify-js": "~2.3.6",
-    "ng-annotate": "^0.9.1"
+    "ng-annotate": "^0.15.4",
+    "uglify-js": "~2.3.6"
   },
   "devDependencies": {
     "mocha": "1.11.0",
