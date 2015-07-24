@@ -6,7 +6,7 @@ Adds [ng-annotate](https://github.com/olov/ng-annotate) AND
 The plugin will annotate and minify your javascript files.
 
 ## Usage
-Install the plugin via npm with `npm install --save uglify-js-brunch`.
+Install the plugin via npm with `npm install --save ng-annotate-uglify-js-brunch`.
 
 Or, do manual install:
 
