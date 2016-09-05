@@ -37,4 +37,7 @@ module.exports = class NgAnnotateUglifyMinifier
         map: optimized.map
       else
         data: optimized.code
+      # Hack taken from latest uglify-js-brunch.
+      # Seems like brunch should handle source maps urls by itself.
+      result.data = result.data.replace(/\n\/\/# sourceMappingURL=\S+$/, '')
       callback error, (result or data)
